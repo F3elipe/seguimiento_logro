@@ -1,0 +1,901 @@
+---
+title: "Informe Seguimiento Tasa de Respuesta Encla 2023"
+format: html
+editor: visual
+self-contained: true
+toc: true
+---
+
+```{r cargar paquetes, include= FALSE}
+pacman::p_load(tidyverse,readxl)
+```
+
+En el siguiente informe se presenta un resumen del sistema de seguimiento al logro, dividido en dos grandes partes: resumen nacional y regional. El informe consiste en una presentación de las tasas de respuesta de las unidades económicas. Es decir, el informe hace referencia a la cantidad de empresas que han sido encuestadas divididas por la muestra total, que corresponde a 8.352 unidades económicas.
+
+El estado de logro se estima según la siguiente fórmula:
+
+$$
+\frac{U_{El}}{N_{tot}}*100
+$$ Donde el valor de $U_{El}$ es el n de las unidades económicas logradas; el valor de $N_{tot}$ corresponde a la muestra total.
+
+La variable que se utilizó para medir el Estado de logro, es precisamente esta, que consta de 4 categorías de respuesta. Estas son: a) "Logro total", que indica cuando las unidades económicas responden el cuestionario de empleadores, trabajores/sindicatos y el cuestionario autoaplicado; b) "Logro parcial", que indica cuando las unidades económicas responden el cuestionario autoaplicado y el cuestionario de empleadores o trabajadores/sindicatos; c) "Logro parcial (sin AA)", que indica los cuestionarios empleadores y trabajores/sindicatos completos con excepción del cuestionario autoaplicado; y d) "Sin logro", que indica cuando no hay cuestionarios respondidos en esa unidad.
+
+Para que un cuestionario se considere "Logrado" se necesita el cumplimiento de estos 3 criterios: a) es completado por recolector/a; b) es revisado por equipo técnico y evaluado según criterios de suficiencia; c) en caso de ser necesario, es corregido y/o completado una vez recontactando al informante.
+
+# Resumen nacional
+
+A continuación se presenta el estado de la tasa de respuesta de las unidades económicas a nivel nacional.
+
+## Tasa de respuesta global
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/global_abs.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/global_rel.RDS")
+```
+:::
+
+## Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/global_tam_abs.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/global_tam_rel.RDS")
+```
+:::
+
+## Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/global_act_abs.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/global_act_rel.RDS")
+```
+:::
+
+## Logro por región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/global_reg_abs.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/global_reg_rel.RDS")
+```
+:::
+
+# Resumen regional
+
+A continuación se presenta el estado de la tasa de respuesta de las unidades económicas por región
+
+## Región XV. Arica y Parinacota
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XV. Arica y Parinacota_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XV. Arica y Parinacota_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XV. Arica y Parinacota_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XV. Arica y Parinacota_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/XV. Arica y Parinacota_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/XV. Arica y Parinacota_rel_act.RDS")
+```
+:::
+
+## Región I. Tarapacá
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/I. Tarapacá_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/I. Tarapacá_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/I. Tarapacá_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/I. Tarapacá_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/I. Tarapacá_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/I. Tarapacá_rel_act.RDS")
+```
+:::
+
+## Región II. Antofagasta
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/II. Antofagasta_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/II. Antofagasta_rel_tot.RDS")
+
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/II. Antofagasta_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/II. Antofagasta_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/II. Antofagasta_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/II. Antofagasta_rel_act.RDS")
+```
+:::
+
+## Región III. Atacama
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/III. Atacama_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/III. Atacama_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/III. Atacama_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/III. Atacama_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9}
+readRDS("output/img/III. Atacama_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9}
+readRDS("output/img/III. Atacama_rel_act.RDS")
+```
+:::
+
+## Región IV. Coquimbo
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/IV. Coquimbo_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/IV. Coquimbo_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE}
+readRDS("output/img/IV. Coquimbo_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/IV. Coquimbo_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/IV. Coquimbo_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/IV. Coquimbo_rel_act.RDS")
+```
+:::
+
+## Región V. Valparaíso
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/V. Valparaíso_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/V. Valparaíso_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/V. Valparaíso_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/V. Valparaíso_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/V. Valparaíso_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/V. Valparaíso_rel_act.RDS")
+```
+:::
+
+## Región XIII. Metropolitana
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XIII. Metropolitana_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XIII. Metropolitana_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XIII. Metropolitana_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XIII. Metropolitana_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/XIII. Metropolitana_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/XIII. Metropolitana_rel_act.RDS")
+```
+:::
+
+## Región VI. OHiggins
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/VI. Ohiggins_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/VI. Ohiggins_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/VI. Ohiggins_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/VI. Ohiggins_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/VI. Ohiggins_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/VI. Ohiggins_rel_act.RDS")
+```
+:::
+
+## Región VII. Maule
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/VII. Maule_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/VII. Maule_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/VII. Maule_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/VII. Maule_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/VII. Maule_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9}
+readRDS("output/img/VII. Maule_rel_act.RDS")
+```
+:::
+
+## Región XVI. Ñuble
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XVI. Ñuble_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/XVI. Ñuble_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XVI. Ñuble_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/XVI. Ñuble_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/XVI. Ñuble_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9}
+readRDS("output/img/XVI. Ñuble_rel_act.RDS")
+```
+:::
+
+## Región VIII. Bío-bío
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/VIII. Bío-bío_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/VIII. Bío-bío_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/VIII. Bío-bío_abs_tam.RDS")
+
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/VIII. Bío-bío_rel_tam.RDS")
+
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/VIII. Bío-bío_abs_act.RDS")
+
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9}
+readRDS("output/img/VIII. Bío-bío_rel_act.RDS")
+
+```
+:::
+
+## Región IX. La Araucanía
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/IX. La Araucanía_abs_tot.RDS")
+
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/IX. La Araucanía_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/IX. La Araucanía_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/IX. La Araucanía_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/IX. La Araucanía_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9}
+readRDS("output/img/IX. La Araucanía_rel_act.RDS")
+```
+:::
+
+## Región XIV. Los Ríos
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XIV. Los Ríos_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/XIV. Los Ríos_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XIV. Los Ríos_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/XIV. Los Ríos_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/XIV. Los Ríos_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/XIV. Los Ríos_rel_act.RDS")
+```
+:::
+
+## Región X. Los Lagos
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/X. Los Lagos_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/X. Los Lagos_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/X. Los Lagos_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/X. Los Lagos_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/X. Los Lagos_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9}
+readRDS("output/img/X. Los Lagos_rel_act.RDS")
+```
+:::
+
+## Región XI. Aysén
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XI. Aysén_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/XI. Aysén_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XI. Aysén_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/XI. Aysén_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/XI. Aysén_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9}
+readRDS("output/img/XI. Aysén_rel_act.RDS")
+```
+:::
+
+## Región XII. Magallanes
+
+### Global región
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XII. Magallanes_abs_tot.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/XII. Magallanes_rel_tot.RDS")
+```
+:::
+
+### Tasa de respuesta por tamaño
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, warning=FALSE}
+readRDS("output/img/XII. Magallanes_abs_tam.RDS")
+```
+
+## %
+
+```{r, echo= FALSE}
+readRDS("output/img/XII. Magallanes_rel_tam.RDS")
+```
+:::
+
+### Tasa de respuesta por actividad económica
+
+::: panel-tabset
+## N°
+
+```{r, echo= FALSE, fig.width=9, warning=FALSE}
+readRDS("output/img/XII. Magallanes_abs_act.RDS")
+```
+
+## %
+
+```{r, echo= FALSE, fig.width=9}
+readRDS("output/img/XII. Magallanes_rel_act.RDS")
+```
+:::
